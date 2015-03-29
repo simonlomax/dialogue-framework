@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+default state should be 1
+IF NPC has multiple states (more than one conversation available) then increment from 1. 
+
+nextstate should only be used on end replies (-9999)
+-->
+<conversation>
+	<dialogue id = "0" state ="1" actorname = "John" actordialogue = "Where did I put it...">
+		<replies>
+			<reply text = "Whats wrong?" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "1" state ="1" actorname = "John" actordialogue = "Oh... it has to be here somewhere.">
+		<replies>
+			<reply text = "Ugh.. hello?" goto = "0" condition = "-9999"/>
+			<reply text = "Do you need help?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "2" state ="1" actorname = "John" actordialogue = "I seem to have misplaced my key...">
+		<replies>
+			<reply text = "Do you know where you had it last?" goto = "3" condition = "-9999"/>
+			<reply text = "Do you mean these keys?" goto = "7" condition = "key1"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "3" state ="1" actorname = "John" actordialogue = "Further down the gantry.. it must be there surely.">
+		<replies>
+			<reply text = "I'll go look for it, you wait here." goto = "-9999" nextstate = "2" condition = "-9999"/>
+			<reply text = "Do you need help?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "4" state ="2" actorname = "John" actordialogue = "Did you find it?">
+		<replies>
+			<reply text = "I'm still looking" goto = "-9999" nextstate = "2" condition = "-9999"/>
+			<reply text = "Got your keys right here." goto = "5" condition = "key1"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "5" state ="2" actorname = "John" actordialogue = "Thanks for helping me!">
+		<replies>
+			<reply text = "You're welcome." goto = "-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "6" state ="3" actorname = "John" actordialogue = "Thanks for helping me!">
+		<replies>
+			<reply text = "You're welcome." goto = "-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "7" state = "2" actorname = "John" actordialogue = "How did you...">
+		<replies>
+			<reply text = "I found them on my travels." goto = "5" condition = "-9999"/>
+		</replies>
+	</dialogue>
+</conversation>

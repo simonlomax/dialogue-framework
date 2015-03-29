@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+default state should be 1
+IF NPC has multiple states (more than one conversation available) then increment from 1. 
+
+nextstate should only be used on end replies (-9999)
+-->
+<conversation>
+	<dialogue id = "0" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "1" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "2" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "3" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "4" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "5" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "6" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	
+	
+	<dialogue id = "7" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "8" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "9" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "10" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "11" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "12" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "13" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	<dialogue id = "14" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "15" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "16" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "17" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "18" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "19" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "20" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "21" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "22" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "23" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	<dialogue id = "24" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "25" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "26" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "27" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "28" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "29" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "30" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "1" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "32" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "33" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	<dialogue id = "34" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "35" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "36" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "37" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "38" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "39" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "40" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "0" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "1" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "2" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "3" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "4" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "5" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "6" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	
+	
+	<dialogue id = "7" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "8" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "9" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "10" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "11" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "12" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "13" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	<dialogue id = "14" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "15" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "16" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "17" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "18" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "19" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "20" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "21" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "22" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "23" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	<dialogue id = "24" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "25" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "26" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "27" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "28" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "29" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "30" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "1" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "32" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "33" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	<dialogue id = "34" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "35" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "36" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "37" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "38" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "39" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "40" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "0" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "1" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "2" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "3" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "4" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "5" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "6" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	
+	
+	<dialogue id = "7" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "8" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "9" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "10" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "11" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "12" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "13" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	<dialogue id = "14" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "15" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "16" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "17" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "18" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "19" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "20" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "21" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "22" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "23" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	<dialogue id = "24" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "25" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "26" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "27" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "28" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "29" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "30" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "1" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "32" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "33" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	<dialogue id = "34" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "35" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "36" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "37" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "38" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "39" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "40" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "0" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "1" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "2" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "3" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "4" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "5" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "6" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	
+	
+	<dialogue id = "7" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "8" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "9" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "10" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "11" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "12" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "13" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	<dialogue id = "14" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "15" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "16" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "17" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "18" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "19" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "20" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "21" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "22" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "23" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	<dialogue id = "24" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "25" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "26" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "27" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "28" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "29" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "30" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "1" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "32" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "33" state = "3" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+	<dialogue id = "34" state ="1" actorname = "Guard" actordialogue = "Hello, Stranger. What can I do for you?">
+		<replies>
+			<reply text = "I need to get out of here right now!!" goto = "1" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "35" state ="1" actorname = "Guard" actordialogue = "I hear your plight but we don't have the keys!">
+		<replies>
+			<reply text = "Please, what must I do?" goto = "2" condition = "-9999"/>
+			<reply text = "I said let me out of here right now!." goto = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "36" state ="1" actorname = "Guard" actordialogue = "Speak with the others here, they may have the keys.">
+		<replies>
+			<reply text = "I will return with these keys, I guarantee it." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "37" state ="1" actorname = "Guard" actordialogue = "Don't make me laugh with your idle threats!">
+		<replies>
+			<reply text = "But I need to get out of here" goto ="1" condition = "-9999"/>
+			<reply text = "What must I do?" goto = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "38" state = "2" actorname = "Guard" actordialogue = "What do you want now?">
+		<replies>	
+			<reply text = "I got the keys right here." goto="5" condition = "done"/>
+			<reply text = "Nothing.. nevermind." goto = "-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "39" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "40" state = "2" actorname = "Guard" actordialogue = "Ah very good, give me a minute to get this show on the road.">
+		<replies>	
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+			<reply text = "Please hurry!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	
+</conversation>
+
+
+
+

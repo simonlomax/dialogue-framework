@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quiz>
+	<!--ID CORRESPONDS TO THE INDEX IN THE GRAPH LIST AND MUST BE SEQUENTIAL!-->
+	<question id = "0" text = "What is the capital of Ireland?">
+		<answers>
+			<answer action = "true">Dublin</answer>
+			<answer action = "false">Cork</answer>
+			<answer action = "false">Galway</answer>
+		</answers>
+	</question>
+	<question id = "1" text = "What are the colours of the Irish Flag?">
+		<answers>
+			<answer action = "true">Green / White / Orange</answer>
+			<answer action = "false">Red / White/ Blue</answer>
+			<answer action = "false">Green / White / Red</answer>
+		</answers>
+	</question>
+	<question id = "2" text = "What is 2 + 2">
+		<answers>
+			<answer action = "false">3</answer>
+			<answer action = "true">4</answer>
+			<answer action = "false">5</answer>
+		</answers>
+	</question>
+	<question id = "3" text = "Who is Taoiseach of Ireland?">
+		<answers>
+			<answer action = "true">Enda Kenny</answer>
+			<answer action = "false">Patrick Bateman</answer>
+			<answer action = "false">John O'Brien</answer>
+		</answers>
+	</question>
+	<question id = "4" text = "Who is Batman?">
+		<answers>
+			<answer action = "endfalse">Peter Parker</answer>
+			<answer action = "end">Bruce Wayne</answer>
+			<answer action = "endfalse">Clark Kent</answer>
+		</answers>
+	</question>
+</quiz>

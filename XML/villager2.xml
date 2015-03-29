@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+default state should be 1
+IF NPC has multiple states (more than one conversation available) then increment from 1. 
+
+nextstate should only be used on end replies (-9999)
+-->
+<conversation>
+	<dialogue id = "0" state ="1" actorname = "Karen" actordialogue = "What do you want?">
+		<replies>
+			<reply text = "I'm stuck here.." goto = "1" condition = "-9999"/>
+			<reply text = "Do these balls belong to you?" goto = "4" condition = "key2"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "1" state ="1" actorname = "Karen" actordialogue = "Boohoo we're all stuck here!">
+		<replies>
+			<reply text = "Hey man.. relax!" goto = "2" condition = "-9999"/>
+			<reply text = "How about you help instead of being a smart ass." goto = "5" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "2" state ="1" actorname = "Karen" actordialogue = "How can I relax.. I lost all my balls.">
+		<replies>
+			<reply text = "You lost.. your balls?" goto = "3" condition = "-9999" />
+			<reply text = "You mean.. these balls?" goto = "4" condition = "key2"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "3" state = "1" actorname = "Karen" actordialogue = "Now who's being a smart ass!">
+		<replies>	
+			<reply text = "I couldn't help myself.. sorry" goto="5" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "4" state ="1" actorname = "Karen" actordialogue = "How did you find them?">
+		<replies>
+			<reply text = "They were literally right beside you.." goto ="8" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "5" state = "1" actorname = "Karen" actordialogue = "Look if you find my balls for me, they're in a box, I'll give you the key thats hidden in one of them.">
+		<replies>	
+			<reply text = "That sounds like a fair deal, I'll be right back." goto="-9999" nextstate = "2" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "6" state = "2" actorname = "Karen" actordialogue = "Any luck finding them?">
+		<replies>	
+			<reply text = "Still looking." goto="-9999" nextstate = "2" condition = "-9999"/>
+			<reply text = "Yeah I got them right here." goto = "4" condition = "key2" />
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "7" state = "3" actorname = "Karen" actordialogue = "You got the key.. now leave me alone!">
+		<replies>	
+			<reply text = "Jeez.." goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+	<dialogue id = "8" state = "2" actorname = "Karen" actordialogue = "Well here.. you can have this key then.">
+		<replies>	
+			<reply text = "Thanks!" goto="-9999" nextstate = "3" condition = "-9999"/>
+		</replies>
+	</dialogue>
+	
+</conversation>

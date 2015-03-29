@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>QuizApp - Make a Quiz</title>
+		<script src ="jquery-1.11.0.min.js"></script>
+	</head>
+
+	<body>
+		<p>Create a Quiz</p>
+		<form method = "POST" action ="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+			<div id ="QuizWrapper">
+				<label>Question</label><input type = "text" id ="question" /><br />
+				<label>Answer 1</label><input type = "text" id ="question" /><br />
+				<label>Answer 2</label><input type = "text" id ="question" /><br />
+				<label>Answer 3</label><input type = "text" id ="question" /><br />
+				<label>Correct Answer</label><input type ="radio" name ="answers" value ="1">1<input type ="radio" name ="answers" value ="1">2<input type ="radio" name ="answers" value ="1">3<br />
+			</div>
+			<input type = "submit" name = "submit" value="Create Quiz">
+		</form>
+	</body>
+</html>
+
+<script>
+$(document).ready(function()
+{
+	var MaxQuestions = 10;
+	var QuizWrapper = $("#QuizWrapper");
+	var AddButton = $("#AddMore");
+	
+	var x = QuizWrapper.length;
+	var QuestionCount = 1;
+	
+	$(AddButton).click(function(e)
+	{
+		if(x <= MaxQuestions)
+		{
+			QuestionCount++;
+			$(QuizWrapper).append('shit goes here');
+			x++;
+		}
+	return false;
+});
+
+$("body").on("click",".removeclass", function(e)
+{
+	if(x > 1)
+	{
+		$(this).parent('div').remove();
+		x--;
+	}
+return false;
+})
+
+});
+</script>

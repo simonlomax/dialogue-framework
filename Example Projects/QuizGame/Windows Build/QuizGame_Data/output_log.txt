@@ -1,0 +1,187 @@
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GTX 770
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\Dropbox\QuizGame\Windows Build\QuizGame_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Dropbox\QuizGame\Windows Build\QuizGame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Dropbox\QuizGame\Windows Build\QuizGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Dropbox\QuizGame\Windows Build\QuizGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.039 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+NullReferenceException: Object reference not set to an instance of an object
+  at DownloadQuizes.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DownloadQuizes.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+http://localhost/QuizAppWebsite/quizes/AllAboutPeter.xml
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+AllAboutPeter.xml downloaded successfully.
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+<?xml version="1.0"?>
+<quiz>
+  <question id="0" text="Why is Peter so great?">
+    <answers>
+      <answer action="false">Just is.</answer>
+      <answer action="false">Unexplainable.</answer>
+      <answer action="true">Jesus loved him more.</answer>
+    </answers>
+  </question>
+  <question id="1" text="On a Scale of 1-10, how great is Peter?">
+    <answers>
+      <answer action="false">10</answer>
+      <answer action="true">10+</answer>
+      <answer action="false">10++</answer>
+    </answers>
+  </question>
+  <question id="2" text="Who is Spider-Man?">
+    <answers>
+      <answer action="true">Peter</answer>
+      <answer action="false">Peter Parker</answer>
+      <answer action="false">Peter Fogarty</answer>
+    </answers>
+  </question>
+  <question id="3" text="If you had one rolo left, who gets it...?">
+    <answers>
+      <answer action="end">Peter</answer>
+      <answer action="false">Stephen</answer>
+      <answer action="false">Peter</answer>
+    </answers>
+  </question>
+</quiz>
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Platform assembly: F:\Dropbox\QuizGame\Windows Build\QuizGame_Data\Managed\System.Xml.dll (this message is harmless)
+Platform assembly: F:\Dropbox\QuizGame\Windows Build\QuizGame_Data\Managed\System.dll (this message is harmless)
+FILE LOADED
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: Why is Peter so great?
+Edge: Why is Peter so great? to Just is.
+Edge: Why is Peter so great? to Unexplainable.
+Edge: Why is Peter so great? to Jesus loved him more.
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: On a Scale of 1-10, how great is Peter?
+Edge: On a Scale of 1-10, how great is Peter? to 10
+Edge: On a Scale of 1-10, how great is Peter? to 10+
+Edge: On a Scale of 1-10, how great is Peter? to 10++
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: Who is Spider-Man?
+Edge: Who is Spider-Man? to Peter
+Edge: Who is Spider-Man? to Peter Parker
+Edge: Who is Spider-Man? to Peter Fogarty
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: If you had one rolo left, who gets it...?
+Edge: If you had one rolo left, who gets it...? to Peter
+Edge: If you had one rolo left, who gets it...? to Stephen
+Edge: If you had one rolo left, who gets it...? to Peter
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: Just is.
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: Unexplainable.
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: Jesus loved him more.
+Edge: Jesus loved him more. to On a Scale of 1-10, how great is Peter?
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: 10
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: 10+
+Edge: 10+ to Who is Spider-Man?
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: 10++
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: Peter
+Edge: Peter to If you had one rolo left, who gets it...?
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: Peter Parker
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: Peter Fogarty
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: Peter
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: Stephen
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Name: Peter
+
+
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+

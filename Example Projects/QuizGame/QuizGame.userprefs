@@ -1,0 +1,13 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\B00044429 - Simon Lomax - Project Files\AdventureGame - Source\Assets\Resources\XML\GuardDialogue.xml">
+    <Files>
+      <File FileName="..\..\B00044429 - Simon Lomax - Project Files\AdventureGame - Source\Assets\Resources\Scripts\DialogueFramework\XMLParser.cs" Line="193" Column="9" />
+      <File FileName="..\..\B00044429 - Simon Lomax - Project Files\AdventureGame - Source\Assets\Resources\XML\GuardDialogue.xml" Line="18" Column="32" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
